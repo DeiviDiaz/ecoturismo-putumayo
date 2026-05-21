@@ -1,1 +1,54 @@
-/* Responsive styles */
+@media (max-width: 991px) {
+
+    .hero-title {
+
+        font-size: 3rem;
+
+    }
+
+    .navbar-collapse {
+
+        background: rgba(0, 0, 0, 0.9);
+
+        padding: 20px;
+        margin-top: 15px;
+
+        border-radius: 15px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-title {
+
+        font-size: 2.3rem;
+
+    }
+
+    .hero-description {
+
+        font-size: 1rem;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .hero-buttons .btn {
+
+        width: 100%;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 2rem;
+
+    }
+
+}
