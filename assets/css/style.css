@@ -410,3 +410,100 @@ body {
     color: var(--light-green);
 
 }
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode {
+
+    background-color: #121212;
+    color: white;
+
+}
+
+/* Navbar */
+
+.dark-mode .custom-navbar {
+
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+/* Cards */
+
+.dark-mode .destination-card {
+
+    background: #1e1e1e;
+
+    color: white;
+
+}
+
+.dark-mode .card-content p {
+
+    color: #ccc;
+
+}
+
+/* Footer */
+
+.dark-mode .footer {
+
+    background: #000;
+
+}
+
+/* Section title */
+
+.dark-mode .section-title p {
+
+    color: #ccc;
+
+}
+
+/* Favorite button */
+
+.dark-mode .favorite-btn {
+
+    background: #333;
+    color: white;
+
+}
+
+/* Botones outline */
+
+.dark-mode .btn-outline-light {
+
+    border-color: white;
+    color: white;
+
+}
+
+/* Botón dark mode */
+
+.dark-btn {
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+
+}
+
+.dark-btn:hover {
+
+    background: white;
+    color: black;
+
+}
