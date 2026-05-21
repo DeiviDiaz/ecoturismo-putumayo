@@ -1,0 +1,1 @@
+// Favoritos con localStorage
