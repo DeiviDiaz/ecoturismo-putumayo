@@ -4,32 +4,33 @@
 
 :root {
 
-    --primary-color: #2E7D32;
-    --secondary-color: #1B5E20;
-    --light-green: #81C784;
-    --background-color: #F5F7F2;
-    --text-color: #222;
-    --white-color: #fff;
+    /* COLORES PRINCIPALES */
 
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --primary-color: #0D3B66;
+    --secondary-color: #144C7A;
 
-}
+    --accent-color: #F4B400;
+    --accent-hover: #D89E00;
 
-/* =========================
-   RESET
-========================= */
+    --light-color: #F8FAFC;
+    --background-color: #F4F7FA;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    --text-color: #1F2937;
+    --text-light: #6B7280;
 
-body {
+    --white-color: #FFFFFF;
 
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    /* SOMBRAS */
+
+    --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+    /* TRANSICIONES */
+
+    --transition: 0.3s ease;
 
 }
 
@@ -39,42 +40,77 @@ body {
 
 .custom-navbar {
 
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    background: rgba(13, 59, 102, 0.75);
 
-    padding: 15px 0;
+    backdrop-filter: blur(12px);
 
-    transition: 0.3s ease;
+    padding: 16px 0;
+
+    transition: var(--transition);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
 }
 
 .navbar-brand {
 
     color: white;
-    font-size: 1.4rem;
+
+    font-size: 1.5rem;
+
     font-weight: 700;
+
+    letter-spacing: 0.5px;
 
 }
 
 .navbar-brand:hover {
 
-    color: var(--light-green);
+    color: var(--accent-color);
 
 }
 
 .nav-link {
 
     color: white;
-    margin-left: 15px;
+
+    margin-left: 18px;
+
     font-weight: 500;
 
-    transition: 0.3s ease;
+    position: relative;
+
+    transition: var(--transition);
+
+}
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0%;
+    height: 2px;
+
+    background: var(--accent-color);
+
+    transition: var(--transition);
+
+}
+
+.nav-link:hover::after {
+
+    width: 100%;
 
 }
 
 .nav-link:hover {
 
-    color: var(--light-green);
+    color: var(--accent-color);
 
 }
 
@@ -89,8 +125,10 @@ body {
     min-height: 100vh;
 
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.55)),
+        linear-gradient(
+            rgba(13, 59, 102, 0.65),
+            rgba(13, 59, 102, 0.55)
+        ),
 
         url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
 
@@ -154,28 +192,46 @@ body {
 
 }
 
+
 /* =========================
    BOTONES
 ========================= */
 
 .btn-success {
 
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+
+    color: #111;
+
     border: none;
 
-    padding: 12px 24px;
+    padding: 12px 26px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
-    transition: 0.3s ease;
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow-sm);
 
 }
 
 .btn-success:hover {
 
-    background-color: var(--secondary-color);
+    background-color: var(--accent-hover);
 
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+
+    color: #111;
+
+}
+
+.btn-outline-light {
+
+    border-width: 2px;
+
+    backdrop-filter: blur(10px);
 
 }
 
@@ -262,19 +318,19 @@ body {
     top: 20px;
     left: 20px;
 
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--accent-color);
 
-    color: var(--primary-color);
+    color: #111;
 
-    padding: 8px 16px;
+    padding: 8px 18px;
 
     border-radius: 50px;
 
     font-size: 0.85rem;
 
-    font-weight: 600;
+    font-weight: 700;
 
-    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
 
 }
 
@@ -343,11 +399,11 @@ body {
 
 .footer {
 
-    background: #111;
+    background: #0B223D;
 
     color: white;
 
-    padding: 70px 0 30px;
+    padding: 80px 0 30px;
 
 }
 
@@ -417,8 +473,9 @@ body {
 
 .dark-mode {
 
-    background-color: #121212;
-    color: white;
+    background-color: #081420;
+
+    color: #F3F4F6;
 
 }
 
@@ -426,7 +483,17 @@ body {
 
 .dark-mode .custom-navbar {
 
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(8, 20, 32, 0.9);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+/* Hero */
+
+.dark-mode .hero-section {
+
+    background-blend-mode: darken;
 
 }
 
@@ -434,15 +501,35 @@ body {
 
 .dark-mode .destination-card {
 
-    background: #1e1e1e;
+    background: #102132;
 
     color: white;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
 
 }
 
 .dark-mode .card-content p {
 
-    color: #ccc;
+    color: #CBD5E1;
+
+}
+
+/* Modal */
+
+.dark-mode .custom-modal {
+
+    background: #102132;
+
+    color: white;
+
+}
+
+/* Info box */
+
+.dark-mode .info-box {
+
+    background: #163047;
 
 }
 
@@ -450,60 +537,92 @@ body {
 
 .dark-mode .footer {
 
-    background: #000;
+    background: #050D16;
 
 }
 
-/* Section title */
+/* Textos */
 
 .dark-mode .section-title p {
 
-    color: #ccc;
+    color: #CBD5E1;
 
 }
 
-/* Favorite button */
+/* Botones favoritos */
 
 .dark-mode .favorite-btn {
 
-    background: #333;
+    background: #1B3147;
+
     color: white;
 
 }
 
-/* Botones outline */
+/* Botón dark */
 
-.dark-mode .btn-outline-light {
+.dark-mode .dark-btn {
 
-    border-color: white;
-    color: white;
+    background: rgba(255, 255, 255, 0.1);
 
 }
 
-/* Botón dark mode */
+/* =========================
+   MODAL DESTINOS
+========================= */
 
-.dark-btn {
+.custom-modal {
 
-    width: 45px;
-    height: 45px;
+    border-radius: 25px;
+
+    overflow: hidden;
 
     border: none;
 
-    border-radius: 50%;
+}
 
-    background: rgba(255, 255, 255, 0.15);
+.custom-modal .modal-body {
 
-    color: white;
-
-    backdrop-filter: blur(10px);
-
-    transition: 0.3s ease;
+    padding: 30px;
 
 }
 
-.dark-btn:hover {
+.custom-modal img {
 
-    background: white;
-    color: black;
+    height: 350px;
+
+    width: 100%;
+
+    object-fit: cover;
+
+}
+
+.info-box {
+
+    background: #f5f5f5;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    height: 100%;
+
+}
+
+.info-box i {
+
+    font-size: 2rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 10px;
+
+}
+
+.info-box h5 {
+
+    font-weight: 700;
 
 }
