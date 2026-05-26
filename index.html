@@ -1,691 +1,499 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Ecoturismo Putumayo</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-</head>
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
-<body>
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
 
-    <!-- Navbar -->
+  <body>
+    <!-- NAVBAR -->
+
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"> Ecoturismo Putumayo </a>
 
-        <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContenido"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand" href="index.html">
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Inicio </a>
+            </li>
 
-                Ecoturismo Putumayo
+            <li class="nav-item">
+              <a class="nav-link" href="destinos.html"> Destinos </a>
+            </li>
 
-            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="hospedajes.html"> Hospedajes </a>
+            </li>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContenido">
+            <li class="nav-item">
+              <a class="nav-link" href="planes.html"> Planes </a>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a class="nav-link" href="atractivos.html"> Atractivos </a>
+            </li>
 
-            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
 
-            <div class="collapse navbar-collapse"
-                id="navbarContenido">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="destinos.html">
-                            Destinos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="hospedajes.html">
-                            Hospedajes
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="planes.html">
-                            Planes
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="atractivos.html">
-                            Atractivos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-3">
-
-                        <button id="darkModeBtn"
-                            class="dark-btn">
-
-                            <i class="bi bi-moon-stars-fill"></i>
-
-                        </button>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+            <li class="nav-item ms-lg-3">
+              <button id="darkModeBtn" class="dark-btn">
+                <i class="bi bi-moon-fill"></i>
+              </button>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
+
     <header class="hero-section">
+      <div class="hero-overlay"></div>
 
-        <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-7">
+            <span class="hero-badge"> Naturaleza • Cultura • Aventura </span>
 
-        <div class="container">
+            <h1 class="hero-title">Descubre la belleza natural del Putumayo</h1>
 
-            <div class="row min-vh-100 align-items-center">
+            <p class="hero-description">
+              Vive experiencias inolvidables entre cascadas, montañas, senderos
+              ecológicos y cultura ancestral en uno de los destinos más
+              biodiversos de Colombia.
+            </p>
 
-                <div class="col-lg-7">
+            <div class="hero-buttons">
+              <a href="destinos.html" class="btn btn-success btn-lg">
+                Explorar destinos
+              </a>
 
-                    <span class="hero-badge">
-                        Naturaleza • Cultura • Aventura
-                    </span>
-
-                    <h1 class="hero-title">
-
-                        Descubre la belleza natural del Putumayo
-
-                    </h1>
-
-                    <p class="hero-description">
-
-                        Vive experiencias inolvidables entre cascadas,
-                        montañas, senderos ecológicos y cultura ancestral
-                        en uno de los destinos más biodiversos de Colombia.
-
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a href="destinos.html"
-                            class="btn btn-success btn-lg">
-
-                            Explorar destinos
-
-                        </a>
-
-                        <a href="planes.html"
-                            class="btn btn-outline-light btn-lg">
-
-                            Ver planes
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+              <a href="planes.html" class="btn btn-outline-light btn-lg">
+                Ver planes
+              </a>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </header>
 
-    <!-- Destinos destacados -->
+    <!-- DESTINOS -->
+
     <section class="featured-section py-5">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Destinos destacados</h2>
 
-        <div class="container">
+            <p>
+              Explora algunos de los lugares más impresionantes del Putumayo.
+            </p>
+          </div>
 
-            <div class="section-title text-center mb-5">
-
-                <h2>Destinos destacados</h2>
-
-                <p>
-                    Explora algunos de los lugares más impresionantes del Putumayo.
-                </p>
-
-            </div>
-
-            <div class="row g-4">
-
-    <!-- CARD 1 -->
-    <div class="col-md-6 col-lg-4">
-
-        <div class="destination-card">
-
-            <div class="card-image">
-
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
-                    alt="Fin del Mundo">
-
-                <span class="card-category">
-                    Cascadas
-                </span>
-
-            </div>
-
-            <div class="card-content">
-
-                <h4>Fin del Mundo</h4>
-
-                <p>
-                    Un impresionante destino natural rodeado de selva,
-                    senderos ecológicos y cascadas.
-                </p>
-
-                <div class="card-footer-custom">
-
-                    <button class="btn btn-success"
-    data-bs-toggle="modal"
-    data-bs-target="#modalFinDelMundo">
-
-    Explorar
-
-</button>
-
-                    <button class="favorite-btn">
-                        <i class="bi bi-heart"></i>
-                    </button>
-
-                </div>
-
-            </div>
-
+          <a href="destinos.html" class="view-all-btn"> Ver todos → </a>
         </div>
 
-    </div>
+        <div class="row g-4">
+          <!-- CARD -->
 
-    <!-- CARD 2 -->
-    <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                  alt="Mocoa"
+                />
 
-        <div class="destination-card">
+                <span class="card-category"> Cascadas </span>
+              </div>
 
-            <div class="card-image">
-
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
-                    alt="Valle del Sibundoy">
-
-                <span class="card-category">
-                    Cultura
-                </span>
-
-            </div>
-
-            <div class="card-content">
-
-                <h4>Valle del Sibundoy</h4>
-
-                <p>
-                    Tradición ancestral, paisajes verdes y experiencias
-                    culturales únicas.
-                </p>
-
-                <div class="card-footer-custom">
-
-                    <button class="btn btn-success"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalValleDelSibundoy">
-                        Explorar
-                    </button>
-
-                    <button class="favorite-btn">
-                        <i class="bi bi-heart"></i>
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-md-6 col-lg-4">
-
-        <div class="destination-card">
-
-            <div class="card-image">
-
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop"
-                    alt="Mocoa">
-
-                <span class="card-category">
-                    Naturaleza
-                </span>
-
-            </div>
-
-            <div class="card-content">
-
+              <div class="card-content">
                 <h4>Mocoa</h4>
 
                 <p>
-                    Ecoturismo, aventura y biodiversidad en el corazón
-                    del Putumayo.
+                  Un impresionante destino natural rodeado de selva y cascadas.
                 </p>
 
                 <div class="card-footer-custom">
-
-                    <button class="btn btn-success"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalMocoa">
-                        Explorar
-                    </button>
-
-                    <button class="favorite-btn">
-                        <i class="bi bi-heart"></i>
-                    </button>
-
+                  <a href="ciudades/mocoa.html" class="btn btn-success">
+                    Explorar
+                  </a>
                 </div>
-
+              </div>
             </div>
+          </div>
 
+          <!-- CARD -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                  alt="Orito"
+                />
+
+                <span class="card-category"> Cultura </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Orito</h4>
+
+                <p>
+                  Cultura ancestral y naturaleza en el corazón del Putumayo.
+                </p>
+
+                <div class="card-footer-custom">
+                  <a href="ciudades/orito.html" class="btn btn-success">
+                    Explorar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop"
+                  alt="Villagarzón"
+                />
+
+                <span class="card-category"> Naturaleza </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Villagarzón</h4>
+
+                <p>
+                  Biodiversidad, aventura y ecoturismo en paisajes naturales.
+                </p>
+
+                <div class="card-footer-custom">
+                  <a href="ciudades/villagarzon.html" class="btn btn-success">
+                    Explorar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-</div>
-
+      </div>
     </section>
 
-    <!-- Modal Fin del Mundo -->
+    <!-- HOSPEDAJES -->
 
-<div class="modal fade"
-    id="modalFinDelMundo"
-    tabindex="-1">
+    <section class="featured-section py-5">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Hospedajes destacados</h2>
 
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+            <p>Descansa en lugares rodeados de naturaleza.</p>
+          </div>
 
-        <div class="modal-content custom-modal">
-
-            <div class="modal-header border-0">
-
-                <h3 class="modal-title">
-
-                    Fin del Mundo
-
-                </h3>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal">
-
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
-                    alt="Fin del Mundo"
-                    class="img-fluid rounded mb-4">
-
-                <p>
-
-                    El Fin del Mundo es uno de los destinos turísticos
-                    más visitados del Putumayo, famoso por sus
-                    impresionantes cascadas, senderos ecológicos
-                    y paisajes naturales.
-
-                </p>
-
-                <div class="row mt-4">
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-geo-alt-fill"></i>
-
-                            <h5>Ubicación</h5>
-
-                            <p>Mocoa, Putumayo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-tree-fill"></i>
-
-                            <h5>Actividad</h5>
-
-                            <p>Senderismo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-clock-fill"></i>
-
-                            <h5>Horario</h5>
-
-                            <p>8:00 AM - 5:00 PM</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+          <a href="hospedajes.html" class="view-all-btn"> Ver todos → </a>
         </div>
 
-    </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop"
+                  alt="Hotel"
+                />
 
-</div>
+                <span class="card-category"> Hotel </span>
+              </div>
 
-<div class="modal fade"
-    id="modalValleDelSibundoy"
-    tabindex="-1">
+              <div class="card-content">
+                <h4>Hotel Selva Andina</h4>
 
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+                <p>Hospedaje ecológico rodeado de naturaleza.</p>
 
-        <div class="modal-content custom-modal">
-
-            <div class="modal-header border-0">
-
-                <h3 class="modal-title">
-
-                    Valle del Sibundoy
-
-                </h3>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal">
-
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
-                    alt="Valle del Sibundoy"
-                    class="img-fluid rounded mb-4">
-
-                <p>
-
-                    El Valle del Sibundoy es uno de los destinos turísticos
-                    más emblemáticos del Putumayo, conocido por sus
-                    paisajes naturales, ríos y comunidades indígenas.
-
-                </p>
-
-                <div class="row mt-4">
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-geo-alt-fill"></i>
-
-                            <h5>Ubicación</h5>
-
-                            <p>Valle del Sibundoy, Putumayo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-tree-fill"></i>
-
-                            <h5>Actividad</h5>
-
-                            <p>Senderismo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-clock-fill"></i>
-
-                            <h5>Horario</h5>
-
-                            <p>8:00 AM - 5:00 PM</p>
-
-                        </div>
-
-                    </div>
-
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver más </a>
                 </div>
-
+              </div>
             </div>
+          </div>
 
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+                  alt="Eco Lodge"
+                />
+
+                <span class="card-category"> Lodge </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Eco Lodge Putumayo</h4>
+
+                <p>Comfort sostenible entre bosques y ríos.</p>
+
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver más </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+                  alt="Cabañas"
+                />
+
+                <span class="card-category"> Cabañas </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Cabañas Río Verde</h4>
+
+                <p>Experiencia rústica con vista al río.</p>
+
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver más </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+
+    <section class="featured-section py-5">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Planes turísticos</h2>
+
+            <p>Vive experiencias inolvidables en el Putumayo.</p>
+          </div>
+
+          <a href="planes.html" class="view-all-btn"> Ver todos → </a>
         </div>
 
-    </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+                  alt="Plan"
+                />
 
-</div>
+                <span class="card-category"> Aventura </span>
+              </div>
 
-<div class="modal fade"
-    id="modalMocoa"
-    tabindex="-1">
+              <div class="card-content">
+                <h4>Plan Cascadas</h4>
 
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+                <p>Recorridos ecológicos y senderismo.</p>
 
-        <div class="modal-content custom-modal">
-
-            <div class="modal-header border-0">
-
-                <h3 class="modal-title">
-
-                    Mocoa
-
-                </h3>
-
-                <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal">
-
-                </button>
-
-            </div>
-
-            <div class="modal-body">
-
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
-                    alt="Mocoa"
-                    class="img-fluid rounded mb-4">
-
-                <p>
-
-                    Mocoa es una de las principales ciudades del Putumayo, conocida por su rica cultura indígena y sus paisajes naturales.
-
-                </p>
-
-                <div class="row mt-4">
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-geo-alt-fill"></i>
-
-                            <h5>Ubicación</h5>
-
-                            <p>Mocoa, Putumayo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-tree-fill"></i>
-
-                            <h5>Actividad</h5>
-
-                            <p>Senderismo</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <div class="info-box">
-
-                            <i class="bi bi-clock-fill"></i>
-
-                            <h5>Horario</h5>
-
-                            <p>8:00 AM - 5:00 PM</p>
-
-                        </div>
-
-                    </div>
-
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver plan </a>
                 </div>
-
+              </div>
             </div>
+          </div>
 
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+                  alt="Plan aventura"
+                />
+
+                <span class="card-category"> Aventura </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Plan Aventura Selvática</h4>
+
+                <p>Expediciones y recorridos en selva profunda.</p>
+
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver plan </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="destination-card">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+                  alt="Plan cultural"
+                />
+
+                <span class="card-category"> Cultura </span>
+              </div>
+
+              <div class="card-content">
+                <h4>Plan Cultural Putumayo</h4>
+
+                <p>Interacción con comunidades y tradiciones locales.</p>
+
+                <div class="card-footer-custom">
+                  <a href="#" class="btn btn-success"> Ver plan </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- EXPERIENCIA -->
 
-</div>
+    <section class="experience-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop"
+              class="img-fluid experience-image"
+              alt="Experiencia"
+            />
+          </div>
 
-    <!-- Footer -->
+          <div class="col-lg-6">
+            <div class="experience-content">
+              <span class="experience-badge"> Ecoturismo auténtico </span>
+
+              <h2>Vive una experiencia natural inolvidable</h2>
+
+              <p>
+                Descubre cascadas, montañas, senderos ecológicos y cultura
+                ancestral en uno de los departamentos más biodiversos de
+                Colombia.
+              </p>
+
+              <a href="planes.html" class="btn btn-success">
+                Explorar experiencias
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
     <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>Ecoturismo Putumayo</h4>
 
-        <div class="container">
-
-            <div class="row g-4">
-
-                <div class="col-lg-4">
-
-                    <h4>Ecoturismo Putumayo</h4>
-
-                    <p>
-                        Proyecto universitario enfocado en promover
-                        el turismo ecológico y cultural del Putumayo.
-                    </p>
-
-                </div>
-
-                <div class="col-lg-4">
-
-                    <h5>Enlaces rápidos</h5>
-
-                    <ul class="footer-links">
-
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-
-                        <li>
-                            <a href="destinos.html">Destinos</a>
-                        </li>
-
-                        <li>
-                            <a href="planes.html">Planes</a>
-                        </li>
-
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-lg-4">
-
-                    <h5>Síguenos</h5>
-
-                    <div class="social-icons">
-
-                        <i class="bi bi-facebook"></i>
-                        <i class="bi bi-instagram"></i>
-                        <i class="bi bi-twitter-x"></i>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <hr>
-
-            <p class="text-center mb-0">
-
-                © 2026 Ecoturismo Putumayo
-
+            <p>
+              Proyecto universitario enfocado en promover el turismo ecológico y
+              cultural del Putumayo.
             </p>
+          </div>
 
+          <div class="col-lg-4">
+            <h5>Enlaces rápidos</h5>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="destinos.html">Destinos</a>
+              </li>
+
+              <li>
+                <a href="planes.html">Planes</a>
+              </li>
+
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Síguenos</h5>
+
+            <div class="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
         </div>
 
+        <hr />
+
+        <p class="text-center mb-0">© 2026 Ecoturismo Putumayo</p>
+      </div>
     </footer>
 
     <!-- Bootstrap -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS -->
+
     <script src="assets/js/main.js"></script>
+
     <script src="assets/js/darkmode.js"></script>
-
-</body>
-
+  </body>
 </html>

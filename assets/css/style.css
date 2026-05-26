@@ -192,6 +192,140 @@
 
 }
 
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 50px;
+
+    gap: 20px;
+
+}
+
+.view-all-btn {
+
+    color: var(--primary-color);
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+.view-all-btn:hover {
+
+    color: var(--accent-color);
+
+}
+
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience-section {
+
+    padding: 100px 0;
+
+}
+
+.experience-image {
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.experience-content h2 {
+
+    font-size: 2.8rem;
+
+    font-weight: 700;
+
+    margin: 20px 0;
+
+}
+
+.experience-content p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+.experience-badge {
+
+    background: rgba(244, 180, 0, 0.15);
+
+    color: var(--accent-color);
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+}
+
+/* =========================
+   DARK BUTTON
+========================= */
+
+.dark-btn {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    background: transparent;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: var(--transition);
+
+}
+
+.dark-btn:hover {
+
+    background: rgba(255,255,255,0.15);
+
+    transform: rotate(8deg);
+
+}
+
+/* DARK MODE */
+
+.dark-mode .view-all-btn {
+
+    color: var(--accent-color);
+
+}
+
+.dark-mode .experience-content p {
+
+    color: #CBD5E1;
+
+}
 
 /* =========================
    BOTONES
@@ -232,6 +366,39 @@
     border-width: 2px;
 
     backdrop-filter: blur(10px);
+
+}
+
+/* =========================
+   DARK BUTTON
+========================= */
+
+.dark-btn {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    background: transparent;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: var(--transition);
+
+}
+
+.dark-btn:hover {
+
+    background: rgba(255,255,255,0.15);
+
+    transform: rotate(8deg);
 
 }
 
