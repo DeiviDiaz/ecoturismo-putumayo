@@ -1013,3 +1013,201 @@
     color: white;
 
 }
+
+/* =========================
+   CATALOG INTRO
+========================= */
+
+.catalog-intro {
+
+    background: #F8FAFC;
+
+}
+
+.catalog-intro h2 {
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+.catalog-intro p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+}
+
+/* DARK MODE */
+
+.dark-mode .catalog-intro {
+
+    background: #0F172A;
+
+}
+
+.dark-mode .catalog-intro p {
+
+    color: #CBD5E1;
+
+}
+
+/* =========================
+   LODGING SECTION
+========================= */
+
+.lodging-card {
+
+    background: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    margin-bottom: 40px;
+
+    box-shadow: var(--shadow-md);
+
+    transition: var(--transition);
+
+}
+
+.lodging-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.lodging-image {
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 350px;
+
+    object-fit: cover;
+
+}
+
+.lodging-content {
+
+    padding: 40px;
+
+}
+
+.lodging-badge {
+
+    display: inline-block;
+
+    background: rgba(244, 180, 0, 0.15);
+
+    color: var(--accent-color);
+
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.lodging-content h3 {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+.lodging-content p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+.lodging-features {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.lodging-features span {
+
+    background: #F1F5F9;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-size: 0.95rem;
+
+}
+
+.lodging-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.location {
+
+    color: var(--text-light);
+
+    font-weight: 600;
+
+}
+
+/* DARK MODE */
+
+.dark-mode .lodging-card {
+
+    background: #1E293B;
+
+}
+
+.dark-mode .lodging-features span {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+.dark-mode .lodging-content p,
+.dark-mode .location {
+
+    color: #CBD5E1;
+
+}
