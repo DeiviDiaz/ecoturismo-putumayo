@@ -1245,3 +1245,386 @@
     padding: 18px;
 
 }
+
+/* =========================
+   PLANS SECTION
+========================= */
+
+.plan-card {
+
+    background: white;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-md);
+
+    transition: var(--transition);
+
+    height: 100%;
+
+}
+
+.plan-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+.plan-image {
+
+    position: relative;
+
+    height: 260px;
+
+    overflow: hidden;
+
+}
+
+.plan-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.plan-badge {
+
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    background: var(--accent-color);
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 50px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+}
+
+.plan-content {
+
+    padding: 30px;
+
+}
+
+.plan-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    color: var(--text-light);
+
+    font-size: 0.95rem;
+
+}
+
+.plan-content h3 {
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+}
+
+.plan-content p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+.plan-features {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+.plan-features span {
+
+    background: #F1F5F9;
+
+    padding: 10px 16px;
+
+    border-radius: 50px;
+
+    font-size: 0.9rem;
+
+}
+
+.plan-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.plan-footer h4 {
+
+    margin: 0;
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+}
+
+/* DARK MODE */
+
+.dark-mode .plan-card {
+
+    background: #1E293B;
+
+}
+
+.dark-mode .plan-content p,
+.dark-mode .plan-top {
+
+    color: #CBD5E1;
+
+}
+
+.dark-mode .plan-features span {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+/* =========================
+   PLAN DETAIL
+========================= */
+
+.plan-detail-hero {
+
+    padding: 160px 0 100px;
+
+    background: #F8FAFC;
+
+}
+
+.plan-detail-badge {
+
+    display: inline-block;
+
+    background: rgba(244, 180, 0, 0.15);
+
+    color: var(--accent-color);
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.plan-detail-hero h1 {
+
+    font-size: 4rem;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+.plan-detail-description {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+.plan-info-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+.plan-info-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-weight: 500;
+
+}
+
+.price-box {
+
+    margin-bottom: 30px;
+
+}
+
+.price-box h2 {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+}
+
+.plan-carousel img {
+
+    border-radius: 30px;
+
+    height: 600px;
+
+    object-fit: cover;
+
+}
+
+/* TABS */
+
+.custom-tabs {
+
+    border: none;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+.custom-tabs .nav-link {
+
+    border: none;
+
+    border-radius: 50px;
+
+    padding: 12px 24px;
+
+    background: #E2E8F0;
+
+    color: #0F172A;
+
+    font-weight: 600;
+
+}
+
+.custom-tabs .nav-link.active {
+
+    background: var(--primary-color);
+
+    color: white;
+
+}
+
+.custom-tab-content {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.custom-tab-content ul {
+
+    padding-left: 20px;
+
+    line-height: 2;
+
+}
+
+/* TIMELINE */
+
+.timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+.timeline-item {
+
+    padding-left: 20px;
+
+    border-left: 4px solid var(--accent-color);
+
+}
+
+/* DARK MODE */
+
+.dark-mode .plan-detail-hero {
+
+    background: #0F172A;
+
+}
+
+.dark-mode .custom-tab-content {
+
+    background: #1E293B;
+
+}
+
+.dark-mode .custom-tabs .nav-link {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+.dark-mode .plan-detail-description {
+
+    color: #CBD5E1;
+
+}
