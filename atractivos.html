@@ -1,298 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Atractivos | Ecoturismo Putumayo</title>
 
     <!-- Bootstrap -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap Icons -->
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
     <!-- Google Fonts -->
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
 
-    <link rel="stylesheet"
-        href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link rel="stylesheet"
-        href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"> Ecoturismo Putumayo </a>
 
-        <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContenido"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand"
-                href="index.html">
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio </a>
+            </li>
 
-                Ecoturismo Putumayo
+            <li class="nav-item">
+              <a class="nav-link" href="destinos.html"> Destinos </a>
+            </li>
 
-            </a>
+            <li class="nav-item">
+              <a class="nav-link" href="hospedajes.html"> Hospedajes </a>
+            </li>
 
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContenido">
+            <li class="nav-item">
+              <a class="nav-link" href="planes.html"> Planes </a>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a class="nav-link active" href="atractivos.html"> Atractivos </a>
+            </li>
 
-            </button>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"> Contacto </a>
+            </li>
 
-            <div class="collapse navbar-collapse"
-                id="navbarContenido">
-
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="destinos.html">
-                            Destinos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="hospedajes.html">
-                            Hospedajes
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="planes.html">
-                            Planes
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="atractivos.html">
-                            Atractivos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                    <li class="nav-item ms-lg-3">
-
-                        <button id="darkModeBtn"
-                            class="dark-btn">
-
-                            <i class="bi bi-moon-fill"></i>
-
-                        </button>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+            <li class="nav-item ms-lg-3">
+              <button id="darkModeBtn" class="dark-btn">
+                <i class="bi bi-moon-fill"></i>
+              </button>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
 
     <!-- HERO -->
 
     <header class="page-hero">
+      <div class="container text-center">
+        <h1>Atractivos turísticos</h1>
 
-        <div class="container text-center">
-
-            <h1>
-
-                Atractivos turísticos
-
-            </h1>
-
-            <p>
-
-                Descubre espacios naturales, biodiversidad
-                y cultura en el Putumayo.
-
-            </p>
-
-        </div>
-
+        <p>
+          Descubre espacios naturales, biodiversidad y cultura en el Putumayo.
+        </p>
+      </div>
     </header>
 
     <!-- INTRO -->
 
     <section class="catalog-intro py-5">
+      <div class="container text-center">
+        <h2>Naturaleza y biodiversidad</h2>
 
-        <div class="container text-center">
-
-            <h2>
-
-                Naturaleza y biodiversidad
-
-            </h2>
-
-            <p>
-
-                Explora lugares emblemáticos del Putumayo
-                donde la naturaleza, la fauna y la cultura
-                se unen en experiencias únicas.
-
-            </p>
-
-        </div>
-
+        <p>
+          Explora lugares emblemáticos del Putumayo donde la naturaleza, la
+          fauna y la cultura se unen en experiencias únicas.
+        </p>
+      </div>
     </section>
 
     <!-- ATRACTIVOS -->
 
     <section class="attractions-section pb-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- CARD -->
 
-        <div class="container">
+          <div class="col-md-6 col-lg-4">
+            <a href="atractivos/cea.html" class="attraction-card">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop"
+                alt="CEA"
+              />
 
-            <div class="row g-4">
+              <div class="attraction-overlay">
+                <span> Naturaleza </span>
 
-                <!-- CARD -->
+                <h3>Centro Experimental Amazónico</h3>
+              </div>
+            </a>
+          </div>
 
-                <div class="col-md-6 col-lg-4">
+          <!-- CARD -->
 
-                    <a href="atractivos/cea.html"
-                        class="attraction-card">
+          <div class="col-md-6 col-lg-4">
+            <a href="#" class="attraction-card">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop"
+                alt="Fin del Mundo"
+              />
 
-                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1400&auto=format&fit=crop"
-                            alt="CEA">
+              <div class="attraction-overlay">
+                <span> Cascadas </span>
 
-                        <div class="attraction-overlay">
+                <h3>Fin del Mundo</h3>
+              </div>
+            </a>
+          </div>
 
-                            <span>
+          <!-- CARD -->
 
-                                Naturaleza
+          <div class="col-md-6 col-lg-4">
+            <a href="#" class="attraction-card">
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop"
+                alt="Mandiyaco"
+              />
 
-                            </span>
+              <div class="attraction-overlay">
+                <span> Ecoturismo </span>
 
-                            <h3>
-
-                                Centro Experimental Amazónico
-
-                            </h3>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <!-- CARD -->
-
-                <div class="col-md-6 col-lg-4">
-
-                    <a href="#"
-                        class="attraction-card">
-
-                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop"
-                            alt="Fin del Mundo">
-
-                        <div class="attraction-overlay">
-
-                            <span>
-
-                                Cascadas
-
-                            </span>
-
-                            <h3>
-
-                                Fin del Mundo
-
-                            </h3>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <!-- CARD -->
-
-                <div class="col-md-6 col-lg-4">
-
-                    <a href="#"
-                        class="attraction-card">
-
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop"
-                            alt="Mandiyaco">
-
-                        <div class="attraction-overlay">
-
-                            <span>
-
-                                Ecoturismo
-
-                            </span>
-
-                            <h3>
-
-                                Cañón del Mandiyaco
-
-                            </h3>
-
-                        </div>
-
-                    </a>
-
-                </div>
-
-            </div>
-
+                <h3>Cañón del Mandiyaco</h3>
+              </div>
+            </a>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <!-- FOOTER -->
 
     <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>Ecoturismo Putumayo</h4>
 
-        <div class="container">
-
-            <p class="text-center mb-0">
-
-                © 2026 Ecoturismo Putumayo
-
+            <p>
+              Proyecto universitario enfocado en promover el turismo ecológico y
+              cultural del Putumayo.
             </p>
+          </div>
 
+          <div class="col-lg-4">
+            <h5>Enlaces rápidos</h5>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Inicio</a>
+              </li>
+
+              <li>
+                <a href="destinos.html">Destinos</a>
+              </li>
+
+              <li>
+                <a href="planes.html">Planes</a>
+              </li>
+
+              <li>
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h5>Síguenos</h5>
+
+            <div class="social-icons">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter-x"></i>
+            </div>
+          </div>
         </div>
 
+        <hr />
+
+        <p class="text-center mb-0">© 2026 Ecoturismo Putumayo</p>
+      </div>
     </footer>
 
     <!-- Bootstrap -->
@@ -302,7 +233,5 @@
     <!-- JS -->
 
     <script src="assets/js/darkmode.js"></script>
-
-</body>
-
+  </body>
 </html>
