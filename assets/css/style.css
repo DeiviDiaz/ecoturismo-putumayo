@@ -114,6 +114,20 @@
 
 }
 
+/* LINK ACTIVO */
+
+.nav-link.active {
+
+    color: var(--accent-color) !important;
+
+}
+
+.nav-link.active::after {
+
+    width: 100%;
+
+}
+
 /* =========================
    HERO SECTION
 ========================= */
@@ -1862,5 +1876,53 @@
 .dark-mode .detail-content p {
 
     color: #CBD5E1;
+
+}
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.weather-card h2 {
+
+    margin-bottom: 25px;
+
+}
+
+.weather-temp {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+}
+
+.weather-description {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+
+}
+
+.dark-mode .weather-card {
+
+    background: #1E293B;
 
 }
