@@ -551,28 +551,6 @@
 
 }
 
-.favorite-btn {
-
-    width: 45px;
-    height: 45px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: #f3f3f3;
-
-    transition: 0.3s ease;
-
-}
-
-.favorite-btn:hover {
-
-    background: var(--primary-color);
-
-    color: white;
-
-}
 
 /* =========================
    FOOTER
@@ -696,23 +674,6 @@
 
 }
 
-/* Modal */
-
-.dark-mode .custom-modal {
-
-    background: #102132;
-
-    color: white;
-
-}
-
-/* Info box */
-
-.dark-mode .info-box {
-
-    background: #163047;
-
-}
 
 /* Footer */
 
@@ -730,15 +691,6 @@
 
 }
 
-/* Botones favoritos */
-
-.dark-mode .favorite-btn {
-
-    background: #1B3147;
-
-    color: white;
-
-}
 
 /* Botón dark */
 
@@ -748,65 +700,6 @@
 
 }
 
-/* =========================
-   MODAL DESTINOS
-========================= */
-
-.custom-modal {
-
-    border-radius: 25px;
-
-    overflow: hidden;
-
-    border: none;
-
-}
-
-.custom-modal .modal-body {
-
-    padding: 30px;
-
-}
-
-.custom-modal img {
-
-    height: 350px;
-
-    width: 100%;
-
-    object-fit: cover;
-
-}
-
-.info-box {
-
-    background: #f5f5f5;
-
-    border-radius: 20px;
-
-    padding: 20px;
-
-    text-align: center;
-
-    height: 100%;
-
-}
-
-.info-box i {
-
-    font-size: 2rem;
-
-    color: var(--primary-color);
-
-    margin-bottom: 10px;
-
-}
-
-.info-box h5 {
-
-    font-weight: 700;
-
-}
 
 /* =========================
    CITY PAGES
@@ -1010,23 +903,6 @@
 
 }
 
-/* DARK MODE */
-
-.dark-mode .filters-section {
-
-    background: #0F172A;
-
-}
-
-.dark-mode .custom-input {
-
-    background: #1E293B;
-
-    border: 1px solid #334155;
-
-    color: white;
-
-}
 
 /* =========================
    CATALOG INTRO
