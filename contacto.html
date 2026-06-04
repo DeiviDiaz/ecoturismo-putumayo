@@ -32,9 +32,11 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <link rel="stylesheet" href="assets/css/animations.css" />
+    ```
   </head>
 
   <body>
+    ```
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
@@ -86,15 +88,235 @@
       </div>
     </nav>
 
-    <main class="page-main">
-      <section class="py-5">
-        <div class="container">
-          <h1 class="mb-3">Contacto</h1>
+    <main>
+      <!-- HERO -->
 
-          <p class="mb-0">Sección de contacto en construcción.</p>
+      <section class="page-hero">
+        <div class="container text-center">
+          <h1>Contáctanos</h1>
+
+          <p>
+            ¿Tienes preguntas sobre destinos, hospedajes o planes turísticos?
+            Estamos aquí para ayudarte a descubrir el Putumayo.
+          </p>
         </div>
       </section>
-    </main>
+
+      <!-- CONTACTO -->
+
+      <section class="contact-section py-5">
+        <div class="container">
+          <div class="row g-5">
+            <!-- INFORMACIÓN -->
+
+            <div class="col-lg-4">
+              <div class="info-card">
+                <h3>Información de contacto</h3>
+
+                <p>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Mocoa, Putumayo, Colombia
+                </p>
+
+                <p>
+                  <i class="bi bi-envelope-fill"></i>
+                  contacto@ecoturismoputumayo.com
+                </p>
+
+                <p>
+                  <i class="bi bi-telephone-fill"></i>
+                  +57 300 123 4567
+                </p>
+              </div>
+            </div>
+
+            <!-- FORMULARIO -->
+
+            <div class="col-lg-8">
+              <div class="contact-form-card">
+                <h3 class="mb-4">Envíanos un mensaje</h3>
+
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <input
+                        type="text"
+                        id="nombre"
+                        class="form-control"
+                        placeholder="Nombre completo"
+                      />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <input
+                        type="email"
+                        id="correo"
+                        class="form-control"
+                        placeholder="Correo electrónico"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      id="telefono"
+                      class="form-control"
+                      placeholder="Teléfono"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      id="asunto"
+                      class="form-control"
+                      placeholder="Asunto"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <textarea
+                      id="mensaje"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Escribe tu mensaje"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-success">
+                    Enviar mensaje
+                  </button>
+                </form>
+
+                <div id="formAlert" class="mt-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREGUNTAS FRECUENTES -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-header text-center">
+
+            <h2>Preguntas frecuentes</h2>
+
+            <p>
+                Resolvemos algunas dudas comunes de nuestros visitantes.
+            </p>
+
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+
+                        ¿Cuál es la mejor época para visitar Putumayo?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Durante gran parte del año se pueden realizar
+                        actividades ecoturísticas, aunque es recomendable
+                        revisar las condiciones climáticas antes de viajar.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+
+                        ¿Necesito guía turístico?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Para algunos senderos y reservas naturales es
+                        recomendable contar con un guía local.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+
+                        ¿Cómo puedo reservar un plan turístico?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Desde la sección de planes encontrarás opciones
+                        de contacto y cotización con los operadores.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
     <!-- FOOTER -->
 
@@ -158,5 +380,8 @@
     <script src="assets/js/main.js"></script>
 
     <script src="assets/js/darkmode.js"></script>
+
+    <script src="assets/js/formulario.js"></script>
+    ```
   </body>
 </html>

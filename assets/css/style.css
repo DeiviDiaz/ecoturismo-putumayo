@@ -1926,3 +1926,32 @@
     background: #1E293B;
 
 }
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact-form-card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+
+    border-radius: 12px;
+
+}
+
+.dark-mode .contact-form-card {
+
+    background: #1E293B;
+
+}
