@@ -63,7 +63,7 @@ Ecoturismo Putumayo es una propuesta de rediseño inspirada en sitios turístico
 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/usuario/ecoturismo-putumayo.git
+git clone https://github.com/DeiviDiaz/ecoturismo-putumayo.git
 ```
 
 2. Abrir la carpeta del proyecto.
