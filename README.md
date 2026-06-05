@@ -76,7 +76,6 @@ git clone https://github.com/DeiviDiaz/ecoturismo-putumayo.git
 - Juan Pablo Castro Lopez
 - Jhoan Andres Vallejo Arango
 - Deivi Paul Diaz Rodriguez
-- Norman Davey Bravo Gonzales
 
 ## Estado del proyecto
 
