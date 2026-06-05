@@ -72,6 +72,8 @@ git clone https://github.com/DeiviDiaz/ecoturismo-putumayo.git
 
 ## Ver pagina
 
+https://deividiaz.github.io/ecoturismo-putumayo/
+
 ![alt text](image.png)
 
 ## Integrantes
