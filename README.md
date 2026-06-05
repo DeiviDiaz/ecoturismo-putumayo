@@ -70,6 +70,10 @@ git clone https://github.com/DeiviDiaz/ecoturismo-putumayo.git
 
 3. Ejecutar `index.html` en el navegador.
 
+## Ver pagina
+
+![alt text](image.png)
+
 ## Integrantes
 
 - Jairo Esneider Trejos Rojas
